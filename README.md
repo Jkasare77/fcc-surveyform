@@ -1,2 +1,2 @@
 # surveyform
-Build a survey form - Responsive Web Design_freeCodeCamp 
+Build a survey form is a certification project required for completing the Responsive Web Design Developer Certification program on freeCodeCamp.org 
