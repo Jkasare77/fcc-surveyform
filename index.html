@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Customer Satisfaction Survey Form</h1>
+            <p id="description">
+                <i>Thank you for taking the time to help us improve our customer service here at Westbridge</i>
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label">Full name:</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                <label id="email-label">Email:</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                <label id="number-label">Age (optional):</label>
+                <input type="number" id="number" min="10" max="99" class="form-control" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label for="questions form-details">How long have you been using our customer service?</label>
+                <select id="dropdown" class="form-control" required>
+                    <option value="">Select an option</option>
+                    <option value="1">< 6 months</option>
+                    <option value="2">6-12 months</option>
+                    <option value="3">1-2 years</option>
+                    <option value="4">> 2 years</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="questions form-details">
+                    What do you like best about our customer service? (Check all that apply)
+                </label>
+                <input type="checkbox" id="option1"  class="input-checkbox" name="option1" value="option1"></input>
+                <label for="option1">Service Level Agreement (SLA) Compliant</label>
+                <input type="checkbox" id="option2"  class="input-checkbox" name="option2" value="option2"></input>
+                <label for="option2">Prompt and Professional Service</label>
+                <input type="checkbox" id="option3"  class="input-checkbox" name="option3" value="option3"></input>
+                <label for="option3">Experienced and Knowledgeable Staff</label>
+                <input type="checkbox" id="option4"  class="input-checkbox" name="option4" value="option4"></input>
+                <label for="option4">Self-Help Service </label>
+            </div>
+            <div class="form-group">
+                <label for="questions form-details">
+                    Would you recommend Westbridge customer service to a friend or colleague?                
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" name="yes-no" id="yes" value="yes">Yes</input>
+                </label>        
+                <label>
+                    <input type="radio" class="input-radio" name="yes-no" id="no" value="no">No</input>
+                </label><br>
+                <label>
+                    <input type="radio" class="input-radio" name="yes-no" id="maybe" value="maybe">Maybe</input>
+                </label><br>
+            </div>
+            <div class="form-group">
+                <label for="comments">Any comments or suggestions?
+                    <textarea id="comments" class="input-textarea" name="comments" rows="3" cols="30" placeholder="Your customer service is awesome..."></textarea>
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>            
+            </div>
+        </form>
+    </div>    
+</body>
+</html>
